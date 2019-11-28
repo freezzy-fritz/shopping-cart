@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/shopping.css">
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2 side-bar">
+        <div class="side">
+            <div class="shopping-cart-text">
+                <h3>shopping cart</h3>
+            </div>
+            <hr class="small-line" />
+            <img src="./images/b0e5861e8b9304b0078d3569728f96fa-cart.png" height="200px" width="200px" />
+            <button onclick= "changeView()" id="changeTxt" type="button" class="btn btn-light">
+                view shopping cart
+            </button>
+            <hr class="small-line"/>
+        </div>
+    </div>
+
+
+    
+    
+        <div class="col-md-10 full bar">
+        
+            <input class="xty form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+            <span class="fas-fa-search"></span>
+            <hr />
+
+            <div class="empty-top" id="viewShoppingCart"></div>
+            <div class="items">
+                <br />
+    <div class="item">
+        <p> item name: t-shirt<span class="quantity"><label> quantity:</label><input type="text"></span></p>
+        <p> price: <span class="price">N6000</span></p>
+        <button class="add-to-cart animated tada infinite"> add to cart</button>
+        <hr>
+        <p> item name: dress <span class="quantity"><label> quantity:</label><input type="text"></span></p>
+        <p> price: <span class="price">N8000</span></p>
+        <button class="add-to-cart animated flash infinite"> add to cart</button>
+        <hr>
+        <p> item name: shorts<span class="quantity"><label> quantity:</label><input type="text"></span></p>
+        <p> price: <span class="price">N4000</span></p>
+        <button class="add-to-cart animated heartBeat infinite"> add to cart</button>
+        <hr>
+        <p> item name: jeans<span><label><span class="quantity"> quantity:</span></label><input type="text"></span></p>
+        <p> price:<span class="price">N7000</span></p>
+        <button class="add-to-cart">add to cart</button>
+
+    
+    </div>
+</div>
+
+<div id="selectShoppingCart">
+        <div class="empty-top"></div>
+            <div class="items">
+                <table class="table">
+                    <thead>
+                <tr>
+                    <th class="remove-button" scope="col">item name</th>
+                    <th class="remove-button" scope="col">price</th>
+                    <th class="remove-button" scope="col">quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>dress</td>
+                        <td>8000</td>
+                        <td>2</td>
+                        <td class="remove-button">REMOVE</td>
+                    </tr>
+                    <tr>
+                        <td>short</td>
+                        <td>4000</td>
+                        <td>1</td>
+                        <td class="remove-button">REMOVE</td>
+                    </tr>
+
+                </tbody>
+                    </table>
+            </div>
+        </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js\shopping.js" ></script>
+</body>
+
+</html>
